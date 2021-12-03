@@ -82,7 +82,7 @@ else:
                             1], linewidths=2, colors='darkred')
             #plt.title('Level sets of the $l^p$ norm')
             plt.legend(b.collections, [
-                '$\{{x: \mid x\mid_{} =1\}}$'.format({p_values[p]})])
+                '$\{{x: \mid x\mid_{} =1\}}$'.format({p_values[p]})], fontsize=15)
             st.pyplot(fig=fig)
 
     st.title('#')
@@ -101,7 +101,7 @@ else:
             1], linewidths=2, colors='darkred')
         #plt.title('Level sets of the $l^p$ norm')
         plt.legend(b.collections, [
-            '$\{{x: \mid x\mid_{} =1\}}$'.format({P})])
+            '$\{{x: \mid x\mid_{} =1\}}$'.format({P})], fontsize=15)
         st.pyplot(fig=fig)
 
     with row_two_col[1]:
@@ -117,7 +117,7 @@ else:
             1], linewidths=2, colors='darkred')
         #plt.title('Level sets of the $l^p$ norm')
         plt.legend(b.collections, [
-            '$\{{x: \mid x\mid_{} =1\}}$'.format({p})])
+            '$\{{x: \mid x\mid_{} =1\}}$'.format({p})], fontsize=15)
         st.pyplot(fig=fig)
 
 
