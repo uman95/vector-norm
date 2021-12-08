@@ -29,6 +29,7 @@ if page == 'Introduction':
     $$
     d(x, y) = \Vert x - y \Vert.
     $$
+    Few common distance measures are presented in figure one.
     ''')
 
     row_two_col3.write("#")
@@ -37,7 +38,7 @@ if page == 'Introduction':
     # row_two_col3.write("#")
     row_two_col3.image('norm_resized.png')
     row_two_col3.write(
-        'Distance measures. (credit [Alex wang](https://www.linkedin.com/posts/mengyaowang11_artificialintelligence-machinelearning-datascience-activity-6868501725100302337-lu1p))')
+        'Figure 1. Distance measures. (credit [Alex wang](https://www.linkedin.com/posts/mengyaowang11_artificialintelligence-machinelearning-datascience-activity-6868501725100302337-lu1p))')
 
     row_three_col_1, _, row_three_col_3 = st.columns([3, 0.1, 2])
 
