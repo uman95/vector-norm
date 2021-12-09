@@ -1,7 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
-
 st.set_page_config(page_title='Vector Norms', layout="wide")
 
 page = st.sidebar.selectbox('Vector Norm', ['Introduction', 'Experiment'])
@@ -72,6 +71,7 @@ else:
     zz = np.c_[xx.ravel(), yy.ravel()]
 
     row_one_col = st.columns(4)
+
     for p in range(len(p_values)):
         with row_one_col[p % 4]:
             norms = np.linalg.norm(zz, ord=p_values[p], axis=1)
@@ -93,6 +93,7 @@ else:
     with row_two_col[0]:
         st.subheader('Try it out')
         P = st.slider('p', min_value=0, max_value=50, value=0)
+
         norms = np.linalg.norm(zz, ord=P, axis=1)
         norms = norms.reshape(xx.shape)
         fig = plt.figure()
